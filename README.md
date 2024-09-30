@@ -1,29 +1,24 @@
-Elliptic Curve Cryptography (ECC) Visualization
+# Elliptic Curve Cryptography Visualization 
+
 This project provides a Python-based implementation of basic operations in Elliptic Curve Cryptography (ECC), along with a graphing tool to visualize elliptic curves over finite fields. The project is designed to demonstrate core cryptographic operations like point addition, doubling, and modular arithmetic, and includes a grapher to plot these elliptic curves.
 
-Features
+# Features
 ECC Operations: Point addition, point doubling, and modular arithmetic.
 Point Multiplication: Efficient point multiplication using binary sequences.
 Elliptic Curve Plotting: Visualizes elliptic curves over finite fields using matplotlib.
 Modular Arithmetic: Includes utilities for modular inverse and square root calculations.
-Installation
-To get started with this project, ensure you have Python installed, then clone the repository:
 
-bash
-Copy code
+# Installation
+To get started with this project, ensure you have Python installed, then clone the repository:
 git clone [https://github.com/yourusername/ecc-visualization.git](https://github.com/me28singh/ECC-vislualizer.git)
 cd ecc-visualization
-Next, install the required dependencies:
 
-bash
-Copy code
+Next, install the required dependencies:
 pip install matplotlib
+
 Usage
 Running the ECC Operations
 To use the ECC operations for cryptographic computations:
-
-python
-Copy code
 from ecc_visualization import ECC, Point
 
 # Define the curve parameters a, b, p (where p is a prime number)
@@ -40,9 +35,6 @@ result = ecc.Add(point1, point2)
 print("Point addition result:", result)
 Visualizing Elliptic Curves
 To plot an elliptic curve over a finite field:
-
-python
-Copy code
 from ecc_visualization import Grapher
 
 # Initialize the Grapher
@@ -55,25 +47,17 @@ a, b, p = 2, 3, 17
 g.plotCurve(a, b, p)
 Example Input:
 To run a test case, pass the curve parameters a, b, and p as input:
-
-bash
-Copy code
 2 3 17
 This will plot the elliptic curve defined by the equation:
-
-lua
-Copy code
 y² ≡ x³ + 2x + 3 (mod 17)
-How It Works
+
+# How It Works
 Elliptic Curve Equation
 An elliptic curve is represented by the equation:
-
-css
-Copy code
 y² = x³ + ax + b (mod p)
 Where a, b define the curve parameters, and p is a prime number for the finite field.
 
-ECC Operations
+# ECC Operations
 The core operations implemented are:
 
 Point Addition: Adds two points on the elliptic curve.
@@ -83,5 +67,5 @@ Modular Arithmetic: Handles modular inverse and modular square root calculations
 Fermat’s Little Theorem
 This project uses Fermat’s Little Theorem to compute modular inverses, a key part of the cryptographic operations.
 
-Contributions
+# Contributions
 Contributions are welcome! If you'd like to contribute to this project, please submit a pull request or open an issue to discuss your changes.
