@@ -10,7 +10,7 @@ Modular Arithmetic: Includes utilities for modular inverse and square root calcu
 
 # Installation
 To get started with this project, ensure you have Python installed, then clone the repository:
-git clone [https://github.com/yourusername/ecc-visualization.git](https://github.com/me28singh/ECC-vislualizer.git)
+git clone https://github.com/me28singh/ECC-vislualizer.git
 cd ecc-visualization
 
 Next, install the required dependencies:
